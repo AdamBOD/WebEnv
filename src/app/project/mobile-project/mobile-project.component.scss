@@ -1,0 +1,69 @@
+@import 'src/assets/scss/colours.scss';
+
+.mobile-project-container {
+    width: 100%;
+    height: 1075px;
+
+    margin-top: 85px;
+
+
+    &:hover {
+        .mobile-project-bg {
+            filter: blur(0px);
+            -webkit-filter: blur(0px);
+            -moz-filter: blur(0px);
+            -ms-filter: blur(0px);
+            -o-filter: blur(0px);
+        }
+    }
+
+    .mobile-project-image-container {
+        padding: 10px 0px;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+    }
+
+    .mobile-project-info-container {
+
+        h1, h3 {
+            width: 100%;
+
+            color: $primary-foreground-colour;
+
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+
+            font-size: 55px;
+        }
+
+        h3 {
+            margin-bottom: 25px;
+        }
+
+        .link-container {
+            display: flex;
+
+            justify-content: center;
+            
+            align-items: center;
+
+            a {
+                margin-top: 15px;
+            }
+        }
+        
+    }
+}
+
+@media(max-width: 475px) {
+    .mobile-project-container {
+        height: 1210px;
+    }
+}

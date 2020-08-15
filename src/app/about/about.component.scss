@@ -1,6 +1,8 @@
 @import 'src/assets/scss/colours.scss';
 
 .about-container {
+    padding-top: 75px;
+
     .about-info-container {
         width: 33.3%;
     
@@ -12,6 +14,16 @@
             font-size: 18px;
             
             line-height: 30px;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .about-container {
+        .about-info-container {
+            width: 85%;
+
+            margin: 0 7.5%;
         }
     }
 }

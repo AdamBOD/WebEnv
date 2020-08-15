@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { DesktopProjectComponent } from './project/desktop-project/desktop-project.component';
 import { MobileProjectComponent } from './project/mobile-project/mobile-project.component';
+import { GithubComponent } from './github/github.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { MobileProjectComponent } from './project/mobile-project/mobile-project.
     HomeComponent,
     AboutComponent,
     DesktopProjectComponent,
-    MobileProjectComponent
+    MobileProjectComponent,
+    GithubComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

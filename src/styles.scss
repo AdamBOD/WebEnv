@@ -28,3 +28,30 @@ body {
         text-align: center;
     }
 }
+
+.link-button {
+    background-color: $primary-foreground-colour;
+    color: #f0f0f0;
+
+    padding: 15px 10px;
+
+    font-size: 18px;
+
+    text-decoration: none;
+
+    &:hover {
+        background-color: $primary-foreground-hover-colour;
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+
+        margin: auto;
+        margin-right: 15px;
+
+        vertical-align: middle;
+
+        display: inline-block;
+    }
+}

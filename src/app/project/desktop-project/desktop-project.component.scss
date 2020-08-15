@@ -1,0 +1,91 @@
+@import 'src/assets/scss/colours.scss';
+
+.desktop-project-container {
+    width: 100%;
+    height: 1000px;
+
+    position: relative;
+
+    &:hover {
+        .desktop-project-bg {
+            filter: blur(0px);
+            -webkit-filter: blur(0px);
+            -moz-filter: blur(0px);
+            -ms-filter: blur(0px);
+            -o-filter: blur(0px);
+        }
+    }
+
+    .desktop-project-bg {
+        width: 100%;
+        height: 100%;
+
+        background-size: cover;
+
+        filter: blur(10px);
+        -webkit-filter: blur(10px);
+        -moz-filter: blur(10px);
+        -ms-filter: blur(10px);
+        -o-filter: blur(10px);
+
+        transition: 0.25s filter linear;
+        -webkit-transition: 0.25s -webkit-filter linear;
+        -moz-transition: 0.25s -moz-filter linear;
+        -ms-transition: 0.25s -ms-filter linear;
+        -o-transition: 0.25s -o-filter linear;
+    }
+
+    .desktop-project-info-container {
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        h1, h3 {
+            width: 100%;
+
+            color: $primary-foreground-colour;
+
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+
+            font-size: 55px;
+        }
+
+        h3 {
+            margin-bottom: 25px;
+        }
+
+        .link-container {
+            display: flex;
+
+            justify-content: center;
+            
+            align-items: center;
+
+            a {
+                margin-top: 15px;
+            }
+        }
+        
+    }
+}
+
+@media(max-width: 1024px) {
+    .desktop-project-container {
+        &:hover {
+            .desktop-project-bg {
+                filter: blur(10px);
+                -webkit-filter: blur(10px);
+                -moz-filter: blur(10px);
+                -ms-filter: blur(10px);
+                -o-filter: blur(10px);
+            }
+        }
+    }
+}

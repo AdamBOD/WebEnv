@@ -1,0 +1,25 @@
+.github-container {
+    width: 100%;
+    height: fit-content;
+
+    padding-top: 85px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .github-data-container {
+        width: 235px;
+
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 100%;
+        }
+
+        a {
+            text-align: center;
+        }
+    }
+}
